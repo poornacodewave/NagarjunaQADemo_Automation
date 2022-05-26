@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 25, 2022 08:22:29 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@demoQABook</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">demoQA booking page</p>
+            <p class="text-sm">
+              <span>20:22:30 PM</span> / <span>30:18:723</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">demoQA booking page</h5>
+<span class='badge badge-success'>05.25.2022 20:22:30</span>
+<span class='badge badge-danger'>05.25.2022 20:22:49</span>
+<span class='badge badge-default'>30:18:723</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>book the book from bookstore</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>book the book from bookstore</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User login to demoQA with 8050302847 and password Sudha@@143</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User Navigate Back To Store</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When User add all the books to collection</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="addNewRecordButton" type="button" class="btn btn-primary">...</button> is not clickable at point (895, 593). Other element would receive the click: <iframe frameborder="0" src="https://eb58778573a835d1f33c1f15954af656.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="1-0-38;24833;<!doctype html><html><head><script>var jscVersion = 'r20220523';</script><script>var google_casm=[];</script></head><body leftMargin=&quot;0&quot; topMargin=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot;><div class=&quot;GoogleActiveViewInnerContainer&quot;style=&quot;left:0px;top:0px;width:100%;height:100%;position:fixed;pointer-events:none;z-index:-9999;&quot;></div><div style=&quot;display:inline&quot;class=&quot;GoogleActiveViewElement&quot;data-google-av-cxn=&quot;https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjsvtNJWeYumgvxMijWuVJIXiPY_HLzbxCgAXO4e-cuUHSV8_L_1ZooRbQSMk2t8rendrGXQi1XBA_W-yzdnkHipJu77ev2fEhHIWCviwfT5UerfAzj21QZPhXw&amp;amp;sai=AMfl-YQla3wHRID7MjtN4UBavX6BSq6uREscCchY8GeHwDFZfU4j1BmPul5Uwc0Eua_p7QPnh5qfGDOBDbV585Dy8QX5rX3m-MTGjo6LGF8qFraa6YHiMx72dBx74W0&amp;amp;sig=Cg0ArKJSzHEsQ68FsNtOEAE&amp;amp;cid=CAASJORoYoqkf_Hoi6pVY4RYXmRAK9QPCsG7BEHuGZ9VlZ7Y4kBWRA&quot;data-google-av-adk=&quot;3546495341&quot;data-google-av-metadata=&quot;la=0&amp;amp;xdi=0&amp;amp;&quot;data-google-av-override=&quot;-1&quot;data-google-av-dm=&quot;2&quot;data-google-av-immediate data-google-av-aid=&quot;0&quot;data-google-av-naid=&quot;1&quot;data-google-av-slift=&quot;&quot;data-google-av-cpmav=&quot;&quot;data-google-av-btr=&quot;&quot;data-google-av-itpl=&quot;20&quot;data-google-av-rs=&quot;4&quot;data-google-av-flags=&quot;[&amp;quot;x%278440&amp;#39;9efotm(&amp;amp;753374%2bejvf/%27844&amp;gt;&amp;#39;9wuvb$&amp;amp;56533&amp;gt;!=|vqc)!273794&amp;amp;&amp;lt;qqvb/%&amp;lt;1735020!=nehu`/!364=5051!9abk{a($160210:3&amp;amp;&amp;lt;cbotf+*0150034:%2bejvf/%72;17613!=efdwa*&amp;#39;76463;21$?ebkpb$&amp;amp;0366717&amp;gt;*&amp;gt;bgipf+!3=712363%9aihwc)!7202&amp;lt;217&amp;#39;9efotm(&amp;amp;20061;48&amp;amp;&amp;gt;`dopb/%&amp;lt;1707200!=8(&amp;amp;2005575?&amp;amp;&amp;gt;`dopb/%&amp;lt;170642?!=|vqc)!7201;=50&amp;#39;9wuvbu&amp;quot;]&quot;><DIV STYLE=&quot;position: absolute; left: 0px; top: 0px; visibility: hidden;&quot;><IMG SRC=&quot;https://pagead2.googlesyndication.com/pagead/gen_204?id=xbid&amp;dbm_b=AKAmf-A2Kd72Nyfrsp5ZOpEuI63tHn18hWyorsBJG2_v4A_8-bhWf1KtkNJC2Xdxl8QUxSud_ZFl1xci0_7RB4H4xaYNfDP-3D7VZ4naG7HolBMwO-Q4Sg0&quot; BORDER=0 WIDTH=1 HEIGHT=1 ALT=&quot;&quot; STYLE=&quot;display:none&quot;></DIV><iframe title=&quot;Blank&quot; src=&quot;https://googleads.g.doubleclick.net/xbbe/pixel?d=CJfnugEQi4Dw4AIY2K6EvQEwAQ&amp;v=APEucNVTMn85ZnBQ_fshLrqLGeI3lG56uiuhVUqieDnbrtAh0y8vPnVTgqcoq6GevRRpu8adFZZNVG6yhb7ATBoY44mJCqa7fA&quot; style=&quot;display:none&quot; aria-hidden=&quot;true&quot;></iframe><div><div style=&quot;position:relative; display:block;&quot;><script data-jc=&quot;75&quot; data-jc-version=&quot;r20220523&quot; data-jc-flags=&quot;[&amp;quot;x%278442&amp;#39;921378y&amp;quot;]&quot;>(function(){/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ 'use strict';var l=this||self;var m=new class{constructor(a,b=0){this.key=a;this.defaultValue=b;this.valueType=&quot;number&quot;}}(&quot;100004&quot;,16E3);function n(a,b){Array.prototype.forEach.call(a,b,void 0)}function p(a,b){return Array.prototype.map.call(a,b,void 0)}function q(a,b){return Array.prototype.reduce.call(a,b,-1)}function r(a){const b=[];for(let c=0;c<a;c++)b[c]=&quot;&quot;;return b};/*  SPDX-License-Identifier: Apache-2.0 */ function t(a){t[&quot; &quot;](a);return a}t[&quot; &quot;]=function(){};function u(a,b){if(a)for(const c in a)Object.prototype.hasOwnProperty.call(a,c)&amp;&amp;b(a[c],c,a)}var v=/https?:\/\/[^\/]+/;function w(a){return(a=v.exec(a))&amp;&amp;a[0]||&quot;&quot;}function x(a=document){return a.createElement(&quot;img&quot;)};let y=0;function z(a,b=null){return b&amp;&amp;b.getAttribute(&quot;data-jc&quot;)===String(a)?b:document.querySelector(`[${&quot;data-jc&quot;}=&quot;${a}&quot;]`)};function A(){B||(B=new C);const a=B.g[m.key];if(&quot;proto&quot;===m.valueType){try{const b=JSON.parse(a);if(Array.isArray(b))return b}catch(b){}return m.defaultValue}return typeof a===typeof m.defaultValue?a:m.defaultValue}var D=class{constructor(){this.g={}}};var C=class extends D{constructor(){super();var a=z(y,document.currentScript);a=a&amp;&amp;a.getAttribute(&quot;data-jc-flags&quot;)||&quot;&quot;;try{const b=JSON.parse(a)[0];a=&quot;&quot;;for(let c=0;c<b.length;c++)a+=String.fromCharCode(b.charCodeAt(c)^&quot;\u0003\u0007\u0003\u0007\b\u0004\u0004\u0006\u0005\u0003&quot;.charCodeAt(c%10));this.g=JSON.parse(a)}catch(b){}}},B;const E=RegExp(&quot;^https?://(\\w|-)+\\.cdn\\.ampproject\\.(net|org)(\\?|/|$)&quot;); function F(){var a=l;const b=[];let c=null,d;do{d=a;try{var e;if(e=!!d&amp;&amp;null!=d.location.href)b:{try{t(d.foo);e=!0;break b}catch(h){}e=!1}var f=e}catch(h){f=!1}if(f){var g=d.location.href;c=d.document&amp;&amp;d.document.referrer||null}else g=c,c=null;b.push(new G(g||&quot;&quot;));try{a=d.parent}catch(h){a=null}}while(a&amp;&amp;d!=a);for(let h=0,k=b.length-1;h<=k;++h)b[h].depth=k-h;d=l;if(d.location&amp;&amp;d.location.ancestorOrigins&amp;&amp;d.location.ancestorOrigins.length==b.length-1)for(a=1;a<b.length;++a)g=b[a],g.url||(g.url=d.location.ancestorOrigins[a- 1]||&quot;&quot;,g.h=!0);return b}function H(a){a=a||F();let b=new G(l.location.href,!1),c=null;const d=a.length-1;for(var e=d;0<=e;--e){var f=a[e];!c&amp;&amp;E.test(f.url)&amp;&amp;(c=f);if(f.url&amp;&amp;!f.h){b=f;break}}e=null;f=a.length&amp;&amp;a[d].url;0!=b.depth&amp;&amp;f&amp;&amp;(e=a[d]);return new I(b,e,c)}var I=class{constructor(a,b,c){this.i=a;this.j=b;this.g=c}},G=class{constructor(a,b){this.url=a;this.h=!!b;this.depth=null}};function J(a,b,c,d,e){const f=[];u(a,function(g,h){(g=K(g,b,c,d,e))&amp;&amp;f.push(h+&quot;=&quot;+g)});return f.join(b)}function K(a,b,c,d,e){if(null==a)return&quot;&quot;;b=b||&quot;&amp;&quot;;c=c||&quot;,$&quot;;&quot;string&quot;==typeof c&amp;&amp;(c=c.split(&quot;&quot;));if(a instanceof Array){if(d=d||0,d<c.length){const f=[];for(let g=0;g<a.length;g++)f.push(K(a[g],b,c,d+1,e));return f.join(c[d])}}else if(&quot;object&quot;==typeof a)return e=e||0,2>e?encodeURIComponent(J(a,b,c,d,e+1)):&quot;...&quot;;return encodeURIComponent(String(a))};class L{constructor(a,b){this.g=a;this.depth=b}}var N=()=>{var a=F();const b=Math.max(a.length-1,0);var c=H(a);a=c.i;var d=c.j;const e=c.g,f=[];c=(h,k)=>null==h?k:h;e&amp;&amp;f.push(new L([e.url,e.h?2:0],c(e.depth,1)));d&amp;&amp;d!=e&amp;&amp;f.push(new L([d.url,2],0));a.url&amp;&amp;a!=e&amp;&amp;f.push(new L([a.url,0],c(a.depth,b)));const g=p(f,(h,k)=>f.slice(0,f.length-k));!a.url||(e||d)&amp;&amp;a!=e||(d=w(a.url))&amp;&amp;g.push([new L([d,1],c(a.depth,b))]);g.push([]);return p(g,h=>M(b,h))}; function M(a,b){const c=q(b,(e,f)=>Math.max(e,f.depth)),d=r(c+2);d[0]=a;n(b,e=>d[e.depth+1]=e.g);return d}var O=()=>{const a=N();return p(a,b=>K(b))};y=75; window.rfl=function(a){try{var b=Number(0===(A()||0)?2083:A());const c=O();c.pop();const d=b-a.length-5;for(b=0;b<c.length;b++){const e=encodeURIComponent(c[b]);if(e.length<=d)return setTimeout(()=>{if(!(.01<Math.random())){var f=z(75,document.currentScript);f=f&amp;&amp;&quot;true&quot;===f.getAttribute(&quot;data-jc-rcd&quot;)?&quot;pagead2.googlesyndication-cn.com&quot;:&quot;pagead2.googlesyndication.com&quot;;var g=(g=z(75,document.currentScript))&amp;&amp;g.getAttribute(&quot;data-jc-version&quot;)||&quot;unknown&quot;;f=`https://${f}/pagead/gen_204?id=jca&amp;jc=${75}&amp;version=${g}&amp;sample=${.01}`;g= window;var h;if(h=g.navigator)h=g.navigator.userAgent,h=/Chrome/.test(h)&amp;&amp;!/Edge/.test(h)?!0:!1;h&amp;&amp;g.navigator.sendBeacon?g.navigator.sendBeacon(f):(g.google_image_requests||(g.google_image_requests=[]),h=x(g.document),h.src=f,g.google_image_requests.push(h))}},0),a+&quot;&amp;rfl=&quot;+e}return a}catch(c){}return a};}).call(this);</script><script>var url = 'https://googleads.g.doubleclick.net/dbm/ad?dbm_c=AKAmf-Ajz8X0t_R6wa8fvrYtgcakgMWWdqDNFJQ990iPeLLUqaTAfXPZUfCnT-rHXf-4fm8xMuy8aYcJzg_Yv6g7uand6JLaufNZDciNMz4ksfSP1Osu86Tu39O3yy2r7efuwgQAzVplYubrvZIuEk8eROOnMHxx1g&amp;cry=1&amp;dbm_d=AKAmf-ABW_nDVWL7rjeqhGI04giLAS9ZXvnJ1oB0kbagik0sUvspSj5nBszZQpUDAplV1iYQvjqd0KsS5l90rhLHABBG3sNRmtyTCz2N5bxmcHjkdfNGu4iBO97E7n3_NDKa4NBLxIw6QitgmvWEjM32n4HGwwTBWTQH5XaedofXlDas7NflRBJuYPQCVQhd-LAgqSuYbI6xaNEEEwVjYfz2ZNm_lhbt1wqfENgudIgL8-shHtM1rB3sY-KILDcLMwfV7efyY9M0fY2fgfcOtm0DVynPAw-w_nUQuzLRZ5U69N5KDD1p-SenpwDgDqshVX0OaCz4VYeTfv-scVHd6mc82oA2QMFg3YXrY1876Yen2-2mu_whHdn7FeIcU2KqToUQBogEunxKL193Z5zYSM2UDrqScdqWbZqvgNLbq3xwRu1339XBxyyQAiQW4JaH5BebKVe2yCzDdYkkfPNnefP-8yLcZA96ABiqtmL4ShEtsghoY8_AhHCikB49k8gsrWe2nPj2NT8VpQ_Unk7wX9GjkDFFZuT8B4XSdf3ybZiRb3ZLYvt5xe_GK7TpU2KEf8mdBZTiZ64x0rHg7Kf2j5p0DPO1zxrzgz-Pc8cpmMDCp6On8qOkDF7qwPW3Zrs2yNeMMWqwjF6NNyRTWdzyPcQqrS4fPKYQQ5_6orX9D0QFTEeKrxL6pHn4qq9p3S37tuVGmMGmRAe7FBix9t7412UHDOYa9PZKzXR4dyHv2lUMHbbCvszZHpIX6JiJLX3GXWgnHFsJZKCY220tTNsAgUycI8kUqw7NN2YrFjacEp1JERAk4-u7697F8vOe02rWpnORdWSgIpGDQLV_vIeELXlMjsKdC9oZoR2N_NxqtbyEg8LjiObgdRrEPj-GTvykuYzlBvtCZz3UG1EUN8GwM128TnXikD7rUqxZQikHcmGN7pT6TWNCBIOi8kdbzSoXuJuShH2r432bcEfLSI2nrUtMkDZET56TkyG7sinoKmMDaE-BBJtl_9pShvhooUwujw7e9jWTy-JI-TBlKuhHGwjgF7O_ywlg0wv_od0F0cSY7kYhPm7_L7mcpcAG9WupOM2190xzwps1xYTLolrX9DhO93eWGiq0SkLyqe8-OLgTGvDq4nRxuBxZP5LEKbBvtztwy4Oui4uevcfIfP8OcEFQp-DFQeg0_Gr1mfFimVFiUgPVp0SoqYSMH1GM2NCbW6bsJrFpc2BaD420N-abIymScvJd2CaN1WtDt9YqiUpx6M2kixnFyG08Donwu-jXp0BmBk6wrhv9zP9JdA3Y8Np9HtrUijovR0iLS0T5C2AYLj_R6pBKKeu2oGc_TMv917-NVmuWG0JiIXrHKN7ysap3-PHppYrNSrsORkvZ_5fePRHnpxxa8J5P2XeG9MiqkREnw1hm_TQcbxduDDjoW86NDRgbkjRi7pameKQqZ21R3lQ9j0PCIVXn2-UILamMTVZRIAkpyVLRlkhIbN0i7VCzScTQ8HLIIXsinLrNl73gDEn7kr8kGTWd3SRpLQhTvVF9kxe8L2y25o4EpPV6iTZx4Ppw2or5iZB0EwXr95UYtcHZPd3AtyFjUxmENDbRarID5z8klH4ljbp-ciGqCvecyjLhzpJ23kg68AIgu1LNsmMjqWaFeIxT4mMNVaVg3KpUtAFSGw13hfs68XFnq5ogYsigiQask9WytayorYeK6MyTD5OfKjHY5EjgcQBpidAb2Z-0JLPT_S4GgqkpZLRPZ9uAfhXmokSkzNsFU8apYWZ--JygcQCFXSbl8Cta15YHhY2PMwXMci5Tq69AQbAnqzuFxCoJATClCrSAHa_RdTci-o6pErDCH1aUH5414om-_SzdI4mU1MhIA4y7nX_lCsVIO97QIu1rqAfC_-fIEZ_qyptZlzHt0bKxjGv-kNZOyvaKYpuzx897QPlTS8b4VzDrPw3oUQo9FhpfvG5EEn9ivYunLXL-4AILBH0cID4cTFoM7PxS1py_XSTfOUKhPmtDcPCnMi2UbPmrbyuTWf6HP-EPbSDndE120bq6um382JGMYOI-x1wnB_tpoXmgsEcwXRBm8ZSsAxUC7LM0GSbJ86f_uiav_riIPHCdpYqoA-j8MZ7jSY2IQBwgMFkYVtqpEVpEz37fGcveoQL7Hcn-irqo7-du53b15iXnMuWhjqpgMsV1sBeSWGqIh1ex0N0w5k1PqGN_-2ldUpcbIQmMlMjyNwiatZ7VjzGjhqdP9UZIBE_luGk9zL4kBnpLEAASBJjWCs60CMHbU1kf6DTzby5Q58GnFswa7HS-3uMgN9BcXs-JpZIQIYFo69QVEuaYgGrFMKujxnVCMPjIzB6fiq3QjwSvAq1HMViqrKB8AFyYV5rxVoD9j0wamoP9Krar6PvP20_DfFTFfyMIyNn0ilrW2_IJ2IpnnQbllNtqGfItArtajfXg7N3oY0WXuWntya0oboBo9l5l_nwQ0rozlMUHU7Gt4i5lb2jV1vVMQ_2cu6_v1SA-YXT8ZptHOyHtUaINDB-7PdVCftPRYGqXKKmJScw7_WHQqDy6oPLARQUbKp9HkVFLqAPkA2HtP5AsLiT_XIPm7ZllfyGQRs0KGGjQSHCKyJLl0w_y-ReWgrcD0_gs9aHSLIda6W7_uFkyMGN4hlkSEK0vVD2wL0tAkI9oe7zwHlQtQaCJ5I5c2XYI5qelMOQf5LkHDCMp0z8jg3GmqvHw8X9JLCCjM9uZyADxuks9qGFGp19_9SN-4_dAoKQd69yz-7Dm45MT24X7TivF0ocdk4x0HJUyWRHdSGTvE2VKnDfmAyz7qOWV-JusPnUe2vIq0VDn4Gkg-Yavsjw4HDpMW7MqU9WmVBJpvSocDzwodXFBpN6w1eTUEif2h9cvqcV1aINEKRaEz6QD8x3tTQY9EKI7tRw2eRmUEN5nnfem7__N7HP78OFdSEN4V4G6crgOeNMmsYk7F9Pip4TcfUVUj6IufXtbwvRML5S-hwrnS4scwuW44SdhwQBtZu6yNAKDs7z7-0prjHUpaUyvVAEif5ppNeZ7Y1Wc-ZHDBf8plNX8c2CoGj17VQSDuSbQCQ2kU9KrRkJoca8PH8tOH-fYdV3aOx4PTvcUUhzTUwH96EXGZz_I5v5fctqTfnCad1NDCw2GfyLHgzCwehU1dTZk3e4lpuR_mPOb5pMxIZicF53GwowwM_8VRgvc5U06PD_6_vLVzAu_G53dXjMgGB1NQjqkQVkD7UX3svzHx951QINJJwLSupwU4qnTW3RPm6vJcC5cObrlXFJ4nxzTMg&amp;cid=CAASJORoYoqkf_Hoi6pVY4RYXmRAK9QPCsG7BEHuGZ9VlZ7Y4kBWRA';document.write('<script src=&quot;' + (window.rfl ? window.rfl(url) : url) + '&quot;></s' + 'cript>');</script><script type=&quot;text/adtag&quot;><div class=&quot;ft_async_tag&quot;>
+    <noscript>
+        <a href=&quot;https://servedby.flashtalking.com/click/8/115843;4214909;0;209;0/?gdpr=&amp;gdpr_consent=&amp;us_privacy=${US_PRIVACY}&amp;ft_width=728&amp;ft_height=90&amp;url=25898880&quot; target=&quot;_blank&quot;>
+        <img border=&quot;0&quot; src=&quot;https://servedby.flashtalking.com/imp/8/115843;4214909;205;gif;DV360;DV360FY20CCBEHInMarketINDSKBAN728x90/?gdpr=&amp;gdpr_consent=&amp;us_privacy=${US_PRIVACY}&quot;>
+        </a>
+    </noscript>
+    <img src=&quot;data:image/png,ft&quot; style=&quot;display: none&quot; onerror='
+        (function(img) {
+            window.ftClick = &quot;&quot;;
+            window.ftExpTrack_4214909 = &quot;&quot;;
+            window.ftX = &quot;&quot;;
+            window.ftY = &quot;&quot;;
+            window.ftZ = &quot;&quot;;
+            window.ftOBA = 1;
+            window.ftContent = &quot;&quot;;
+            window.ftCustom = &quot;&quot;;
+            window.ft728x90_OOBclickTrack = &quot;&quot;;
+            window.ftRandom = Math.random()*1000000;
+            window.ftClick_4214909 = ftClick;
+
+            if(typeof(ft_referrer)==&quot;undefined&quot;){window.ft_referrer=(function(){var r=&quot;&quot;;if(window==top){r=window.location.href;}else{try{r=window.parent.location.href;}catch(e){}r=(r)?r:document.referrer;}while(encodeURIComponent(r).length>1000){r=r.substring(0,r.length-1);}return r;}());}
+            var ftDomain = (window==top)?&quot;&quot;:(function(){var d=document.referrer,h=(d)?d.match(&quot;(?::q/q/)+([qw-]+(q.[qw-]+)+)(q/)?&quot;.replace(/q/g,decodeURIComponent(&quot;%&quot;+&quot;5C&quot;)))[1]:&quot;&quot;;return (h&amp;&amp;h!=location.host)?&quot;&amp;ft_ifb=1&amp;ft_domain=&quot;+encodeURIComponent(h):&quot;&quot;;}());
+            var ftV_4214909={pID:&quot;4214909&quot;,width:&quot;728&quot;,height:&quot;90&quot;,params:{ftx:window.ftX,fty:window.ftY,ftadz:window.ftZ,ftscw:window.ftContent,ft_custom:window.ftCustom,ft_id:window.ftID||&quot;&quot;,ft_idEnabled:window.ftIDEnabled||&quot;&quot;,ftOBA:window.ftOBA,ft_domain:((ftDomain||&quot;&quot;).match(RegExp(&quot;&amp;ft_domain=([^&amp;$]+)&quot;,&quot;i&quot;))||[&quot;&quot;,&quot;&quot;])[1],ft_ifb:((ftDomain||&quot;&quot;).match(RegExp(&quot;&amp;ft_ifb=([^&amp;$]+)&quot;,&quot;i&quot;))||[&quot;&quot;,&quot;&quot;])[1],ft_agentEnv:window.mraid||window.ormma?&quot;1&quot;:&quot;0&quot;,ft_referrer:encodeURIComponent(window.ft_referrer),gdpr:&quot;&quot;,gdpr_consent:&quot;&quot;,us_privacy:&quot;${US_PRIVACY}&quot;,cachebuster:window.ftRandom},winVars:{ftClick_4214909:window.ftClick_4214909,ftExpTrack_4214909:window.ftExpTrack_4214909,ft728x90_OOBclickTrack:window.ft728x90_OOBclickTrack},DTimeout:1E3,GTimeout:1E3},
+            ftPProc=function(d){var c=this;d=JSON.parse(JSON.stringify(d));var f=[],l=function(a,b){b=&quot;undefined&quot;===typeof b||isNaN(b)?1:parseInt(b,10);a=a||&quot;&quot;;for(var e=0<=b?b:0;e--;)a=encodeURIComponent(a);return a},h=function(a){a=a.constructor==Array?a:[];for(var b=0;b<a.length;b++){var e=a[b].t&amp;&amp;&quot;w&quot;==a[b].t?&quot;winVars&quot;:&quot;params&quot;,c=d[e][a[b].p],g=l(a[b].n||&quot;&quot;,a[b].e),h=l(a[b].v||&quot;&quot;,a[b].e);g=(g?g+&quot;:&quot;:&quot;&quot;)+h;&quot;&quot;!==g&amp;&amp;(c=&quot;undefined&quot;===typeof c||&quot;&quot;===c||&quot;o&quot;===a[b].m?&quot;&quot;:c+&quot;;&quot;,d[e][a[b].p]=c+g)}a=!0;for(b=0;b<f.length;b++)if(!f[b].deployed){a=!1;break}a&amp;&amp;k()},k=function(){k=function(){};deployTag()};c.getVars=function(a){return JSON.parse(JSON.stringify(a?&quot;string&quot;===typeof a&amp;&amp;&quot;undefined&quot;!==typeof d[a]?d[a]:{}:d))};c.getSrcString=function(){var a=c.getVars(&quot;params&quot;),b=[],e;for(e in a)a.hasOwnProperty(e)&amp;&amp;&quot;undefined&quot;!==typeof a[e]&amp;&amp;&quot;&quot;!==a[e]&amp;&amp;b.push(e+&quot;=&quot;+a[e]);return b.join(&quot;&amp;&quot;)};c.deployWinVars=function(){var a=c.getVars(&quot;winVars&quot;),b;for(b in a)a.hasOwnProperty(b)&amp;&amp;&quot;undefined&quot;!==typeof a[b]&amp;&amp;(window[b]=a[b])};c.addPProc=function(a){a.deployed=!1;f.push(a)};c.init=function(){d.v=5;var a=[];0===f.length?k():(f.forEach(function(b){a.push(b.id);b.timeout=parseInt(isNaN(b.timeout)?d.DTimeout:b.timeout,10);b.timer=setTimeout(function(){var a={};clearTimeout(b.timer);b.deployed||(b.deployed=!0,h(a))},b.timeout||d.DTimeout);b.deploy(c.getVars(),function(a){clearTimeout(b.timer);b.deployed||(b.deployed=!0,h(a))})}),window[&quot;ftPPIDs_&quot;+d.pID]=d.v+&quot;;&quot;+a.join(&quot;,&quot;))}},ft4214909PP = new ftPProc(ftV_4214909);
+            
+ft4214909PP.addPProc({id:&quot;6881&quot;,deploy:function(settings,callback){callback([{p:&quot;ftClick_&quot;+settings.pID,v:&quot;https://googleads.g.doubleclick.net/dbm/clk%3Fsa%3DL%26ai%3DCDtVivkKOYo2nGpTwowOV6LmwCOWX6qRqisOJ9JEPr4G649cCEAEgxvvWeWDlyuWDtA6gAYviiqAByAEJqAMBqgToAU_QH3QcKQXj5Xj1sTDNl69_DLdAc2e3822j0A0fjMEMaSpDfydKKb6NSJ7iNA29Tx7kag4X_lvGyBDYcnUjxwzhrn05yfsSNVxNnSgT_Tep8XbaPqBJxZlAovMYjHu1XeGMj7Y7yJDW3vELNVS12515XjuCtWQtluhg2XaMcqTuvYaYbBRrbNueVW6Tz10tHyTM0OevB5XWRLmDLe7niV0p35NxWo5YtT9lTiulDIGKLrT1naEVEcawki6qj6x5-M4IPONYYwJGZe0BktpPKwAsdvHOsPQVMMiQIPuJv_I0PzwFHkqBah3ABPGD88XeA-AEA5AGAaAGTYAH3Z313wKoB47OG6gHk9gbqAfulrECqAf-nrECqAeko7ECqAfVyRuoB6a-G6gH89EbqAeW2BuoB6qbsQKoB9-fsQLYBwDSCAcIgGEQARgd8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkygAoDmAsByAsBgAwBsBOy7KMP0BMA2BMN2BQB0BUB-BYBgBcB%26ae%3D1%26num%3D1%26cid%3DCAASJORoYoqkf_Hoi6pVY4RYXmRAK9QPCsG7BEHuGZ9VlZ7Y4kBWRA%26sig%3DAOD64_3HAXYCawuyDTDpWCmsJOGodidt2g%26client%3Dca-pub-4573231550355221%26dbm_c%3DAKAmf-Cdicj0FihP8XAG74DqRDAubySS-tPY5AbXpJbzIyiwllYFL1v3PsqBo41S7Bb66uFYpOtyKFbFHamw0ogYCiM2mZN9JJaytZ7Nx4Cnr4fg2UgNu6qT74frwvx39XWd0jwAalzuvxDGDk6jiYzITGrILPzDEQ%26cry%3D1%26dbm_d%3DAKAmf-BpgBfQq1KIqHJY1ZtETbnXwPzcPCi-LQRyESR6SUglwfMIhyE3t2z0TbCzUWWNadVpupHbAh_bjjewYUAwBJkfXs7Ui5hfN9_Tmub_VYAXxUOXFmRy3WNb7XMrcWXA5C0-nNIiwy-hJehgBpi6S5QV5SunpMPxcCpbmfEQ0CqLaxqcgLWUshhKNa9EuQ2LKyh6iaSLat35RhKzSyqz4thS7QZavmVxbWKC7cRRjazuqzm4dlCvnypbIJq913ZwKRjG6uK5HLzHZ7WmowqbPYvVmkgd3aObwFpHQCr3rCgGJ-iO0KKDm9Grg8OuGoWaHuVPFl7lC7LOxIz048kzIoC1b7nx3ygwPs-xJ76gu0FQduMDaR6WUSJns6A-k69EtUc2TogMF0n2jv1EgrXrRAc_MKZZIqQIoIhM_d2L_hg4szwvVjZH5zmsdKHKZDzqdhXFnDHoGCpL4siOMwkBOPMTjM67suBh6aHkI03o89eT9JXenm4%26adurl%3D&quot;,m:&quot;o&quot;,e:0,t:&quot;w&quot;}]);}});
+ft4214909PP.addPProc({id:&quot;20236&quot;,deploy:function(settings,callback){var ftDv=&quot;[%ft_dv%]&quot;;callback([{p:&quot;ft_dv&quot;,v:ftDv,m:&quot;o&quot;}]);}});
+            var deployTag = function(){deployTag = function(){};clearTimeout(gTimer);ft4214909PP.deployWinVars();
+                var ftTag = document.createElement(&quot;script&quot;);
+                ftTag.id = &quot;ft_servedby_4214909&quot;;
+                ftTag.src = &quot;https://servedby.flashtalking.com/imp/8/115843;4214909;201;jsappend;DV360;DV360FY20CCBEHInMarketINDSKBAN728x90/?&quot;+ft4214909PP.getSrcString();
+                ftTag.name = &quot;ftscript_728x90&quot;;
+                img.parentNode.insertBefore(ftTag, img.nextSibling);
+            },gTimer = setTimeout(function(){clearTimeout(gTimer);deployTag();},ftV_4214909.GTimeout);ft4214909PP.init();
+        })(this);
+    '>
+</div>
+</script><script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;https://cdn.doubleverify.com/dvbs_src.js?ctx=1828362&amp;cmp=115843&amp;plc=4214909&amp;sid=18330&amp;dvregion=0&amp;unit=728x90&amp;DVP_PROG_REP=1&amp;DVP_DV_TT=1&amp;DVP_PP_ID=3&amp;prr=1&amp;DVP_DV_CT=1&amp;DVP_PP_IMP_ID=ABAjH0in0gxwT0NKbXA4xcqureys&amp;DVP_DBM_1=3060631&amp;DVP_DBM_2=23009954&amp;DVP_DBM_3=14589415823&amp;DVP_DBM_4=396433240&amp;DVP_DBM_5=1&amp;DVP_DBM_6=1&amp;DVP_DBM_7=343093677772&amp;turl=https://demoqa.com/books&amp;DVP_PP_BUNDLE_ID=&quot;></script><script src=&quot;https://cdn.doubleverify.com/dvtp_src.js?ctx=3397726&amp;cmp=3398513&amp;sid=pp3&amp;plc=33985131&amp;advid=3398311&amp;adsrv=0&amp;btreg=&amp;btadsrv=&amp;tagtype=&amp;dvtagver=6.1.src&amp;DVP_PROG_REP=1&amp;DVP_DV_TT=1&amp;DVP_PP_ID=3&amp;DVP_DV_CT=1&amp;DVPX_PP_IMP_ID=ABAjH0in0gxwT0NKbXA4xcqureys&amp;DVP_DBM_1=3060631&amp;DVP_DBM_2=23009954&amp;DVP_DBM_3=14589415823&amp;DVP_DBM_4=396433240&amp;DVP_DBM_5=1&amp;DVP_DBM_6=1&amp;DVP_DBM_7=343093677772&amp;turl=https://demoqa.com/books&amp;DVP_PP_BUNDLE_ID=&quot; type=&quot;text/javascript&quot;></script></div></div></div><script data-jc=&quot;22&quot; src=&quot;https://tpc.googlesyndication.com/pagead/js/r20220523/r20110914/client/window_focus_fy2019.js&quot; async data-jc-version=&quot;r20220523&quot; data-jcp-url=&quot;https://googleads.g.doubleclick.net/pagead/interaction/?ai=CDtVivkKOYo2nGpTwowOV6LmwCOWX6qRqisOJ9JEPr4G649cCEAEgxvvWeWDlyuWDtA6gAYviiqAByAEJqAMBqgToAU_QH3QcKQXj5Xj1sTDNl69_DLdAc2e3822j0A0fjMEMaSpDfydKKb6NSJ7iNA29Tx7kag4X_lvGyBDYcnUjxwzhrn05yfsSNVxNnSgT_Tep8XbaPqBJxZlAovMYjHu1XeGMj7Y7yJDW3vELNVS12515XjuCtWQtluhg2XaMcqTuvYaYbBRrbNueVW6Tz10tHyTM0OevB5XWRLmDLe7niV0p35NxWo5YtT9lTiulDIGKLrT1naEVEcawki6qj6x5-M4IPONYYwJGZe0BktpPKwAsdvHOsPQVMMiQIPuJv_I0PzwFHkqBah3ABPGD88XeA-AEA5AGAaAGTYAH3Z313wKoB47OG6gHk9gbqAfulrECqAf-nrECqAeko7ECqAfVyRuoB6a-G6gH89EbqAeW2BuoB6qbsQKoB9-fsQLYBwDSCAcIgGEQARgd8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkygAoDmAsByAsBgAwBsBOy7KMP0BMA2BMN2BQB0BUB-BYBgBcB&amp;amp;sigh=nfQlHNx4Hfo&amp;amp;cid=CAQSOwCNIrLM6bqotGkqxDsvidMUqp66OlTbd-9PQWH4D5fHKucvbswpPR-s5z7uXu1zG1FWUvc9McZZp9ez&quot; data-jcp-gws-id=&quot;&quot; data-jcp-qem-id=&quot;CI3-uM_z-vcCFRT4aAodFXQOhg&quot;></script><iframe title=&quot;Blank&quot; scrolling=&quot;no&quot; frameborder=0 height=0 width=0 src=&quot;https://pagead2.googlesyndication.com/pagead/s/cookie_push_onload.html#aHR0cHM6Ly9hZC50dXJuLmNvbS9yL2NzP3BpZD0zJmdvb2dsZV9naWQ9Q0FFU0VGTzVseWxUOWZTNGpqMnVBd3VBU2JFJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QVlnNXFQTHpMamx2elBjbzBKeXJzbmJjQWFKNUE0TUtvYTlYd0E5bWZpT0Y0VWkyZUNWdmdvMjlPQ1REcU1ydVJxbkNnNHl6U3VsMlZyVll2NFgtNG1fWFJUQXh2M3lGZFNLRVZmbURxVVhnUGdSbUJfa1AwcEtpM3VRcjNCeGg5VW1sXy11V3FzZnFtZw==,aHR0cHM6Ly9wbS53NTVjLm5ldC9waW5nX21hdGNoLmdpZj9laT1HT09HTEUmcnVybD1odHRwcyUzQSUyRiUyRmNtLmcuZG91YmxlY2xpY2submV0JTJGcGl4ZWwlM0Znb29nbGVfbmlkJTNEOTY3NTMwOSUyNmdvb2dsZV9obSUzRF93Zml2ZWZpdmVjNjRlc2NfJmdvb2dsZV9naWQ9Q0FFU0VHdm45NjBHUG82R2xFRzBuZURkazZRJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QVlnNXFQTFAyek10TmdRRV96NEV0V1RXT1g0RUFyV2EyVWJMbXduaFZucjFGa1NiVWlNU1dBSGlBYnZ5LVMxWlVvTHMwYVk4SllnS190TjBDNXZ4emgtOXpvMkVlVGdNWXJmRVhCdE16aEY0TTRQNVdIbERKSWF2cUdxajlkQUo3TXhfZTN0cEduX012V3M=,aHR0cHM6Ly94LmJpZHN3aXRjaC5uZXQvc3luYz9zc3A9Z29vZ2xlJmdvb2dsZV9naWQ9Q0FFU0VGeXFLTm54T3QtdXk2bmVMa1RuZHlvJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QVlnNXFQSk55V2k0NEtoelZqVkJJSi1LRTFDQzJQalhKODN3bl9qU0R6VzVsaC1rX0ZDNDdMaWExOGl3S1lwdktsLXkxTHZHdGxpaktkdnN6Szk1UU93a3pOWmxPTVNveWlwRk1oUVRzUmE1UG40amRscVhDa3VxRWxqQm5pNEFpQjlDZGdUZzEwUkIybzg=,aHR0cHM6Ly9wci1iaC55YnAueWFob28uY29tL3N5bmMvYWR4P2dvb2dsZV9naWQ9Q0FFU0VNM3dkM2J0Q1NqQ2NzZDVYN2dEOXBNJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QVlnNXFQSXhBbWV1c21RZ2lUQWJDLU55Q1J5alhodEhHNjRTZFZIMUlJUlV5c0M4RTI5YWVXTjIxMUNpcHFWcXRndjR4X1dNM1pRRThEVXQzVDdhZEg4WUZPYV9LemgtbE9BdGh1RzdnSFIybWVCT2RKaDk1YXlCdUJhQUN6aEhSYTNTaU9zU0JOdnFmRU0=,aHR0cHM6Ly9zc3VtLXNlYy5jYXNhbGVtZWRpYS5jb20vdXNlcm1hdGNocmVkaXI_cz0xODQwMjMmY2I9aHR0cHMlM0ElMkYlMkZjbS5nLmRvdWJsZWNsaWNrLm5ldCUyRnBpeGVsJTNGZ29vZ2xlX25pZCUzRGluZGV4JTI2Z29vZ2xlX2htJTNEJmdvb2dsZV9naWQ9Q0FFU0VDY1J5V21NbV9YVkxxVjVXbnBwYWU4Jmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QVlnNXFQS0dwbU80aVFCNHZ0dVh1SE94MWd2Q2wwbnJuSEdrZTcwV01oU3dOaXRqTUk1VkZaUmZGZ09NN2ZsUV84V3hiY0E5aG1FZ2lENUhKSldOZ1hNTFRBWjg0XzBycXItakxwdWQyMXo2THRJa0VJUnpKVTBkZFJub2FPbEpvQTBlamYyQXB0TzFZVTg=,aHR0cHM6Ly9zeW5jLjFyeC5pby91c2Vyc3luYzIvcm1wc3NwP3N1Yj1nb29nbGUmcmVkaXI9aHR0cHMlM0ElMkYlMkZjbS5nLmRvdWJsZWNsaWNrLm5ldCUyRnBpeGVsJTNGZ29vZ2xlX25pZCUzRHIxJTI2Z29vZ2xlX3B1c2glM0QlNUJSWF9TUEQlNUQlMjZnb29nbGVfaG0lM0QlNUJSWF9VVUlEX0I2NF9CSU4lNUQmZ29vZ2xlX2dpZD1DQUVTRUFKN180Y0JfVG5BcmJtNUhNZ1FPZEUmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BWWc1cVBJOWQ2N3g4VEFKUUcyRmp5RjFjcldnS2NoMnRqaDVNT01aR2diUmtnenVZNzBjYTQ1YUctY2V1U01RYk5sVzl6dEkydDQ3MU9JTXl4aXBxWkhPQ2FPOEttXzBYdU5zSTJzWkxPaTR4MHdTTmdSeGRzT293S052MVN3cWp5SkF3d1hxMnVqTndKMA==,aHR0cHM6Ly9ydGIyLXVzZWFzdC5lLXZvbHV0aW9uLmFpL3N5bmM_ZXhjaGFuZ2U9MTkzJmdvb2dsZV9naWQ9Q0FFU0VMcGJyN052ZlNsV2h2TDliSTdUVWc0Jmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QVlnNXFQSjJ4MDcweFlUMFM3WjgwSVJ0LVFwc2FaNjhwM1FHS0JWalpRbmIyazRvaFJYcElGQmNBd29TY0x1SFdWNFBjU3pSYTFwRGd2cTNPSFlYSjRyaVlrR0NYM0ZUT1pvZUU5Y0hsel93dzhSSjJLM0w5RGg0a25qZmNzRXRjMXJLQlhIR2pHS2hsZ3h4,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSmpTNHNzZGdPMkNCTW5wcmd2c1JWUkNkODY3b2ZtNlZJZkxBYnMyMlloX1BUVXl5WGJlYTg4bnY1MHZiTDgwam95Rzg5b0FB&quot;  style=&quot;position:absolute&quot; aria-hidden=&quot;true&quot;></iframe><script src=&quot;https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914&quot;></script><script type=&quot;text/javascript&quot;>osdlfm();</script><script data-jc=&quot;23&quot; src=&quot;https://tpc.googlesyndication.com/pagead/js/r20220523/r20110914/client/qs_click_protection_fy2019.js&quot; data-jc-version=&quot;r20220523&quot;></script><script>googqscp.init([[[[null,500,99,2,9,null,null,null,1]]]]);</script><img src=&quot;//www.google.com/ads/measurement/l?ebcid=ALh7CaSLRj01y2qVaC5kQbRVLGr32sCYysXJnEqqrnv6pkQbLEbaTwwUEZ-PYynAB7Wrfb3CKirwvqahAHbfe0t0gTqAxSpAwg&quot; style=&quot;display:none;&quot; alt=&quot;&quot;></img><div style=&quot;bottom:0;right:0;width:728px;height:90px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:pixelated !important;z-index:2147483647;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB7SURBVBjTbZCBEYAwCAPTDbL/tF4hSamKWsv54BfgP1YH1t4mA1hfuW+erAj0hWQFkbVCb07aNaHhdfaOiViZJLi7Tm+ExOkdkewb76el4c7NQieAKpfHAv0El4elVXlM3Xed8xmU0ZyZbPCdYOMc9FvDvePPa4KeTFEPZbMFy57aU0IAAAAASUVORK5CYII=') !important;&quot;></div><script data-jc=&quot;103&quot; data-jc-version=&quot;r20220523&quot; data-jcp-base_url=&quot;https://googleads.g.doubleclick.net/pagead/conversion/?ai=CDtVivkKOYo2nGpTwowOV6LmwCOWX6qRqisOJ9JEPr4G649cCEAEgxvvWeWDlyuWDtA6gAYviiqAByAEJqAMBqgToAU_QH3QcKQXj5Xj1sTDNl69_DLdAc2e3822j0A0fjMEMaSpDfydKKb6NSJ7iNA29Tx7kag4X_lvGyBDYcnUjxwzhrn05yfsSNVxNnSgT_Tep8XbaPqBJxZlAovMYjHu1XeGMj7Y7yJDW3vELNVS12515XjuCtWQtluhg2XaMcqTuvYaYbBRrbNueVW6Tz10tHyTM0OevB5XWRLmDLe7niV0p35NxWo5YtT9lTiulDIGKLrT1naEVEcawki6qj6x5-M4IPONYYwJGZe0BktpPKwAsdvHOsPQVMMiQIPuJv_I0PzwFHkqBah3ABPGD88XeA-AEA5AGAaAGTYAH3Z313wKoB47OG6gHk9gbqAfulrECqAf-nrECqAeko7ECqAfVyRuoB6a-G6gH89EbqAeW2BuoB6qbsQKoB9-fsQLYBwDSCAcIgGEQARgd8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkygAoDmAsByAsBgAwBsBOy7KMP0BMA2BMN2BQB0BUB-BYBgBcB&amp;amp;sigh=nfQlHNx4Hfo&quot; data-jcp-cpu_label=&quot;heavy_ad_intervention_cpu&quot; data-jcp-net_label=&quot;heavy_ad_intervention_network&quot;>(function(){/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ 'use strict';/*  SPDX-License-Identifier: Apache-2.0 */ const d=function(a,b=null){return b&amp;&amp;b.getAttribute(&quot;data-jc&quot;)===String(a)?b:document.querySelector(`[${&quot;data-jc&quot;}=&quot;${a}&quot;]`)}(103,document.currentScript);if(null==d)throw Error(&quot;JSC not found 103&quot;);const g={},h=d.attributes;for(let a=h.length-1;0<=a;a--){const b=h[a].name;0===b.indexOf(&quot;data-jcp-&quot;)&amp;&amp;(g[b.substring(9)]=h[a].value)} (function(a,b,k){var e=window;a&amp;&amp;b&amp;&amp;k&amp;&amp;e.ReportingObserver&amp;&amp;e.fetch&amp;&amp;(new e.ReportingObserver((c,m)=>{c=c[0];var f;if(&quot;HeavyAdIntervention&quot;===(null==c?void 0:null==(f=c.body)?void 0:f.id)){var l;f=0<((null==(l=c.body.message)?void 0:l.indexOf(&quot;network&quot;))||0)?k:b;e.fetch(`${a}&amp;label=${f}`,{keepalive:!0,method:&quot;get&quot;,mode:&quot;no-cors&quot;});m.disconnect()}},{types:[&quot;intervention&quot;],buffered:!0})).observe()})(g.base_url,g.cpu_label,g.net_label);}).call(this);</script></body></html>{&quot;uid&quot;:&quot;1&quot;,&quot;hostPeerName&quot;:&quot;https://demoqa.com&quot;,&quot;initialGeometry&quot;:&quot;{\&quot;windowCoords_t\&quot;:0,\&quot;windowCoords_r\&quot;:1366,\&quot;windowCoords_b\&quot;:728,\&quot;windowCoords_l\&quot;:0,\&quot;frameCoords_t\&quot;:720,\&quot;frameCoords_r\&quot;:1038.5,\&quot;frameCoords_b\&quot;:810,\&quot;frameCoords_l\&quot;:310.5,\&quot;styleZIndex\&quot;:\&quot;auto\&quot;,\&quot;allowedExpansion_t\&quot;:24,\&quot;allowedExpansion_r\&quot;:310.5,\&quot;allowedExpansion_b\&quot;:6,\&quot;allowedExpansion_l\&quot;:310.5,\&quot;xInView\&quot;:1,\&quot;yInView\&quot;:1}&quot;,&quot;permissions&quot;:&quot;{\&quot;expandByOverlay\&quot;:false,\&quot;expandByPush\&quot;:false,\&quot;readCookie\&quot;:false,\&quot;writeCookie\&quot;:false}&quot;,&quot;metadata&quot;:&quot;{\&quot;shared\&quot;:{\&quot;sf_ver\&quot;:\&quot;1-0-38\&quot;,\&quot;ck_on\&quot;:1,\&quot;flash_ver\&quot;:\&quot;0\&quot;}}&quot;,&quot;reportCreativeGeometry&quot;:false,&quot;isDifferentSourceWindow&quot;:false,&quot;goog_safeframe_hlt&quot;:{}}" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HSR6O1F', ip: '192.168.72.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c0e2d753eb30a0593e85398afb7427b0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at pageObjectsModels.QALogin.clickAddToYourCollectionAndNavigateBackToStore(QALogin.java:124)
+	at stepDefinations.demoQA.user_add_all_the_books_to_collection(demoQA.java:57)
+	at ✽.User add all the books to collection(file:///C:/Users/Lenovo/Documents/Nagarjuna/Automation/src/test/java/features/demoQA.feature:8)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:22:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>When User add all the books to collection</a>
+<div class="">
+<span class="badge badge-default">demoQA booking page.book the book from bookstore.When User add all the books to collection</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@demoQABook</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@demoQABook</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:22:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>book the book from bookstore</a>
+<div class="">
+<span class="badge badge-default">demoQA booking page.book the book from bookstore</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:22:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>book the book from bookstore</a>
+<div class="">
+<span class="badge badge-default">demoQA booking page.book the book from bookstore</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 25, 2022 08:22:29 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 25, 2022 08:22:49 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='83%'><b>5</b> steps passed</small></div>
+<div>
+<small data-tooltip='16%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"demoQA booking page":18.723
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@demoQABook</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 5,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
