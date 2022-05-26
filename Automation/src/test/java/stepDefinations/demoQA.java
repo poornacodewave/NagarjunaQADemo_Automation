@@ -39,6 +39,7 @@ public class demoQA {
 		
 		qaloginObj.enterloginInputFieldValue(username);
 		qaloginObj.enterpasswordInputFieldValue(password);
+		_functions.scroll(driver);
 		qaloginObj.clickLoginButton();
 		
     }

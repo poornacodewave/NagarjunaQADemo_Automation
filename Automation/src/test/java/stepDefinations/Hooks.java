@@ -14,7 +14,7 @@ public class Hooks extends Base{
 	@AfterStep
 	public void addScreenshot(Scenario scenario){
 
-	      final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+	      final byte[] screenshot = ((TakesScreenshot) Base.Driver()).getScreenshotAs(OutputType.BYTES);
 	      scenario.attach(screenshot, "image/png", "image"); 	
 	}
 	

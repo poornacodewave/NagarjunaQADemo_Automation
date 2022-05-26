@@ -152,11 +152,22 @@ public class QALogin extends Base{
     	//driver.switchTo().alert().sendKeys(Keys.ENTER);
     	//driver.switchTo().alert().accept();
       	
-      	Alert simpleAlert = driver.switchTo().alert();
-        simpleAlert.accept();
+    	try {
+			
+    		for(int i=0;i<10;i++)
+        	{
+          	Alert simpleAlert = driver.switchTo().alert();
+            simpleAlert.accept();
+            Thread.sleep(5000);
+        	}
+    		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+    	
         
     	//_functions.handleAlert(driver);
-    	//_functions.handleAlert(driver);
+    	_functions.handleAlert(driver);
     	//_functions.pressEnterKey(driver);
     	_functions.minimumWait();
     	_functions.scroll(driver);	
@@ -171,8 +182,8 @@ public class QALogin extends Base{
     		String actualVal = listofBooks.get(0).getText();
     		if(expVal.trim().equals(actualVal.trim()))
     		{
-    			System.out.println(expVal);
-    			System.out.println(actualVal);
+    			System.out.println("l"+expVal+"l");
+    			System.out.println("l"+actualVal+"l");
     			System.out.println(expVal +" is equal to "+actualVal);
     			Assert.assertTrue(true);
     		}
