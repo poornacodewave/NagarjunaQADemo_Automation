@@ -14,8 +14,13 @@ public class Hooks extends Base{
 	@AfterStep
 	public void addScreenshot(Scenario scenario){
 
-	      final byte[] screenshot = ((TakesScreenshot) Base.Driver()).getScreenshotAs(OutputType.BYTES);
-	      scenario.attach(screenshot, "image/png", "image"); 	
+		try {
+			 final byte[] screenshot = ((TakesScreenshot) Base.Driver()).getScreenshotAs(OutputType.BYTES);
+		      scenario.attach(screenshot, "image/png", "image"); 	
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	     
 	}
 	
 	@After("@NiuliTest1")

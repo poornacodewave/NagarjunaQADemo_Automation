@@ -64,8 +64,12 @@ public class QALogin extends Base{
 	@FindBy(xpath="//div[@class='action-buttons']")
 	List<WebElement> listofBooks;
 	
-	@FindBy(id="Git Pocket Guide")
+	@FindBy(xpath="//a[text()='Git Pocket Guide']")
     WebElement gitPocketGuideLinkButton;
+	
+	@FindBy(xpath="//span[text()='Profile']")
+	WebElement ProfileButton;
+	
 	
 	public GenericFunctions _functions;
 	
@@ -83,6 +87,13 @@ public class QALogin extends Base{
 
         _functions.scrollUp(driver);
     	searchBoxInputField.sendKeys(val);
+
+    }
+    
+    public void clickProfileButton(){
+
+        _functions.scroll(driver);
+        ProfileButton.click();
 
     }
     
@@ -207,6 +218,17 @@ public class QALogin extends Base{
     	gitPocketGuideLinkButton.click();
 
     }
+    
+    public void VerifyfourbooksDisplayed(){
+    	
+    	
+    	Assert.assertTrue(youDontKnowJSLinkButton.isDisplayed());
+    	Assert.assertTrue(understandingEMACScriptLinkButton.isDisplayed());
+    	Assert.assertTrue(javascriptDesignPatternsLinkButton.isDisplayed());
+    	Assert.assertTrue(gitPocketGuideLinkButton.isDisplayed());
+
+    }
+    
     
    	
 }

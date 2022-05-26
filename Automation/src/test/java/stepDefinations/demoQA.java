@@ -89,6 +89,18 @@ public class demoQA {
 		 
 		 
 	    }
+	 
+	 @When("^User navigate to profile page$")
+	    public void user_navigate_to_profile_page() throws Throwable {
+		 qaloginObj.clickProfileButton();
+		 _functions.minimumWait();
+	    }
+
+	 @Then("^Verify only all four books are displayed$")
+	    public void verify_only_all_four_books_are_displayed() throws Throwable {
+		 qaloginObj.VerifyfourbooksDisplayed();
+	    }
+
 
 		
 }

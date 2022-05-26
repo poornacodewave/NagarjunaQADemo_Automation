@@ -9,6 +9,9 @@ When User add all the books to collection
 Then User enter the <Searchvalue> in search input field
 Then Verify only <Bookname> is displayed
 When User add gitPocketGuide to collection
+When User navigate to profile page
+Then Verify only all four books are displayed
+
 
 Examples:
 |Username  |password  |Searchvalue|Bookname					|
